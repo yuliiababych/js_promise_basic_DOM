@@ -19,7 +19,7 @@ promise1.then((message) => {
     `<div class="message">${message}</div>`;
 });
 
-promise2.catch((message) => {
+promise2.catch((error) => {
   document.querySelector('body').innerHTML +=
-    `<div class="message error-message">${message}</div>`;
+    `<div class="message error-message">${error.message}</div>`;
 });
