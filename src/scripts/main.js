@@ -1,9 +1,9 @@
 'use strict';
 
 const promise1 = new Promise((resolve, reject) => {
-  const logo = document.querySelector('.logo');
+  const matelogo = document.querySelector('.logo');
 
-  logo.addEventListener('click', () => {
+  matelogo.addEventListener('click', () => {
     resolve('Promise was resolved!');
   });
 });
